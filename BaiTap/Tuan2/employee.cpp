@@ -1,7 +1,6 @@
-#include <list>
+
 #include <iostream>
 using namespace std;
-
 class Employee
 {
 
@@ -9,6 +8,12 @@ public:
     string id;
     string name;
     int salary;
+    Employee()
+    {
+        this->id = "";
+        this->name = "";
+        this->salary = 0;
+    }
     Employee(string id, string name, int salary)
     {
         this->id = id;
@@ -18,11 +23,11 @@ public:
 
     void input()
     {
-        cout << "Nhap msnv: ";
+        cout << "Enter id: ";
         getline(std::cin, this->id);
-        cout << "Nhap ten: ";
+        cout << "Enter name: ";
         getline(std::cin, this->name);
-        cout << "Nhap luong: ";
+        cout << "Enter salary: ";
         cin >> this->salary;
     }
 
@@ -30,33 +35,11 @@ public:
     {
         cout << this->id << "\t" << this->name << "\t" << this->salary << endl;
     }
+
+    // bool operator < (Employee e)
+    // {
+    //     return this->salary < e.salary;
+    // }
 };
 
-void showlist(list<Employee> g)
-{
-    list<Employee>::iterator it;
-    cout << "ID" << "\t" << "Name" << "\t" << "Salary" << endl;
-    for (it = g.begin(); it != g.end(); ++it)
-    {
-        it->output();
-    }
-}
 
-int main()
-{
-    list<Employee> employees;
-
-    employees.push_back(Employee("1", "A", 5000));
-    employees.push_back(Employee("6", "B", 3000));
-    employees.push_back(Employee("3", "C", 6000));
-    employees.push_back(Employee("2", "D", 1000));
-    employees.push_back(Employee("4", "E", 2000));
-    //showlist(employees);
-
-    employees.sort([](Employee &front, Employee &back)
-                   { return front.salary < back.salary; });
-
-    showlist(employees);
-    system("pause");
-    return 0;
-}
