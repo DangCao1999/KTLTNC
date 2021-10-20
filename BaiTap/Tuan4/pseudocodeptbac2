@@ -1,0 +1,27 @@
+Nhap a,b,c
+Tinh denta = b*b - 4*a*c
+Neu denta = 0 => phuong trinh co nghiem kep: x1 = x2 = -b/2a
+Nguoc lai neu denta < 0 => phuong trinh vo nghiem
+Nguoc lai phuong trinh co 2 nghiem phan biet:
+    x1 = (-b+sqrt(denta))/2a
+    x2 = (-b-sqrt(denta))/2a
+
+
+function Sum(n)
+    sum = 0
+    for i = 0 to n do
+        sum += i
+    end for
+    return sum
+end function
+
+
+function Sum(n)
+    sum = 0
+    i = 1
+    while i <= n do
+        sum += i
+        i += 1
+    end while
+    return sum
+end function
