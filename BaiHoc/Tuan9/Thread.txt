@@ -1,0 +1,2 @@
+thread là dòng điều khiển của một chương trình
+multithread là để điều khiển máy tính làm nhiều việc song song

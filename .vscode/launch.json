@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch UsingLocale2",
+            "request": "launch",
+            "mainClass": "UsingLocale2",
+            "projectName": "KTLTNC_8b67dd16"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "KTLTNC_8b67dd16"
+        },
+        {
             "name": "C/C++: Build and debug active file",
             "type": "cppdbg",
             "request": "launch",

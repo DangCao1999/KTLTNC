@@ -44,7 +44,13 @@
         "xstring": "cpp",
         "xtr1common": "cpp",
         "xutility": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "fstream": "cpp",
+        "string": "cpp"
     },
-    "C_Cpp.errorSquiggles": "Disabled"
+    "C_Cpp.errorSquiggles": "Disabled",
+    "java.project.sourcePaths": [
+        "BaiTap/Tuan6/bttailop",
+        "BaiTap/Tuan7/Source Packages/lesson7.resource"
+    ]
 }
